@@ -70,9 +70,14 @@ height: 100vh;
     border: 1px solid black;
     height: 100px;
     width: 100px;
-    padding: 20px;    
+    padding: 20px;  
+    text-align: center; 
+    line-height: 50px; 
 }
 
 .change{
     background-color: #4e7edd;
+    height: 100px;
+    width: 100px;
+
 }

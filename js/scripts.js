@@ -10,20 +10,24 @@ let containercell = document.querySelector(".containercell");
         function (){
 
             for (let i = 0; i < 100 + 1; i++){
-            console.log(i);
-            let div = document.createElement('div');
-            div.classList.add('cell');
-            containercell.append(div);
+                console.log(i);
+                let div = document.createElement('div');
+                div.classList.add('cell');
+                containercell.append(div);
+                div.innerHTML = i;
 
-            cell.addEventListener ("click", 
-            function (){
+                div.addEventListener ("click", 
+                function (){
 
                     // let cellcolor = document.getElementsByClassName("cell");
-                    // cellcolor.classList.add('change');
-                    
-
-                } 
-            )        
+                    if (div.classList.contains('cell')){
+                            div.classList.add('change');
+                            console.log("hai cliccato la cella:",div.innerHTML)
+                    }else{
+                            div.classList.remove('change');
+                    }
+                })
+            }        
+        
         }
-    }
-);
+    );
