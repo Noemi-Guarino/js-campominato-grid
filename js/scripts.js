@@ -5,18 +5,25 @@
 
 let containercell = document.querySelector(".containercell");
 
-let btnGenerate = document.getElementById("generate");
-btnGenerate.addEventListener ("click", 
-    function (){
+    let btnGenerate = document.getElementById("generate");
+    btnGenerate.addEventListener ("click", 
+        function (){
 
-        for (let i = 0; i < 100 + 1; i++){
-        console.log(i);
-        let div = document.createElement('div');
-        div.classList.add('cell');
-        containercell.append(div);
+            for (let i = 0; i < 100 + 1; i++){
+            console.log(i);
+            let div = document.createElement('div');
+            div.classList.add('cell');
+            containercell.append(div);
+
+            cell.addEventListener ("click", 
+            function (){
+
+                    // let cellcolor = document.getElementsByClassName("cell");
+                    // cellcolor.classList.add('change');
+                    
+
+                } 
+            )        
         }
-        
-        
-        
     }
-)
+);
